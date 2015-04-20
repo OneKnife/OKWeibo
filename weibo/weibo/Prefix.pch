@@ -1,0 +1,38 @@
+//
+//  Prefix.pch
+//  weibo
+//
+//  Created by qianfeng on 15-4-13.
+//  Copyright (c) 2015年 zyc. All rights reserved.
+//
+
+#ifndef weibo_Prefix_pch
+#define weibo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#import "UIImage+iOS7.h"
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue]>=7.0)
+
+
+#endif
+
+
+
+#ifdef DEBUG
+
+#define ZYCLog(...) NSLog(__VA_ARGS__)
+
+#else
+#define ZYCLog(...)
+
+#endif
+
+
+#endif

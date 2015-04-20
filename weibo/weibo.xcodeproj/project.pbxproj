@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC1F354B1ADE668D00F3D262 /* UIBarButtonItem+ZYC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F354A1ADE668D00F3D262 /* UIBarButtonItem+ZYC.m */; };
+		BC24B2221ADAB09B002CAC79 /* UIImage+iOS7.m in Sources */ = {isa = PBXBuildFile; fileRef = BC24B2211ADAB09B002CAC79 /* UIImage+iOS7.m */; };
+		BC2861461AD9569300997206 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2861451AD9569300997206 /* main.m */; };
+		BC2861491AD9569300997206 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2861481AD9569300997206 /* AppDelegate.m */; };
+		BC2861511AD9569300997206 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2861501AD9569300997206 /* Images.xcassets */; };
+		BC2861541AD9569300997206 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2861521AD9569300997206 /* LaunchScreen.xib */; };
+		BC2861601AD9569300997206 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC28615F1AD9569300997206 /* weiboTests.m */; };
+		BC5E25EE1ADB519900658E1B /* ZYCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E25ED1ADB519900658E1B /* ZYCTabBarView.m */; };
+		BC6C00BA1AE3675D00CAAB55 /* ZYCSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6C00B91AE3675D00CAAB55 /* ZYCSearchBar.m */; };
+		BC6C00BE1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6C00BD1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m */; };
+		BC7B34F81ADA9F610016AD08 /* ZYCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7B34F71ADA9F610016AD08 /* ZYCTabBarViewController.m */; };
+		BC7B34FB1ADA9FE30016AD08 /* ZYCHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7B34FA1ADA9FE30016AD08 /* ZYCHomeTableViewController.m */; };
+		BC7B34FE1ADA9FF60016AD08 /* ZYCMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7B34FD1ADA9FF60016AD08 /* ZYCMessageTableViewController.m */; };
+		BC7B35011ADAA0190016AD08 /* ZYCDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7B35001ADAA0190016AD08 /* ZYCDiscoverTableViewController.m */; };
+		BC7B35041ADAA02C0016AD08 /* ZYCMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7B35031ADAA02C0016AD08 /* ZYCMeTableViewController.m */; };
+		BCA6064D1AE49A8300EB0AC6 /* ZYCOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6064C1AE49A8300EB0AC6 /* ZYCOAuthViewController.m */; };
+		BCC297641ADB6F9400130119 /* ZYCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC297631ADB6F9400130119 /* ZYCTabBarButton.m */; };
+		BCC297671ADBDE0E00130119 /* ZYCBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC297661ADBDE0E00130119 /* ZYCBadgeButton.m */; };
+		BCC2976A1ADBF5EF00130119 /* ZYCNavagationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC297691ADBF5EF00130119 /* ZYCNavagationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC28615A1AD9569300997206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC2861381AD9569300997206 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC28613F1AD9569300997206;
+			remoteInfo = weibo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC1F35491ADE668D00F3D262 /* UIBarButtonItem+ZYC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+ZYC.h"; path = "weibo/UIBarButtonItem+ZYC.h"; sourceTree = "<group>"; };
+		BC1F354A1ADE668D00F3D262 /* UIBarButtonItem+ZYC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+ZYC.m"; path = "weibo/UIBarButtonItem+ZYC.m"; sourceTree = "<group>"; };
+		BC24B2201ADAB09B002CAC79 /* UIImage+iOS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+iOS7.h"; path = "weibo/UIImage+iOS7.h"; sourceTree = "<group>"; };
+		BC24B2211ADAB09B002CAC79 /* UIImage+iOS7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+iOS7.m"; path = "weibo/UIImage+iOS7.m"; sourceTree = "<group>"; };
+		BC2861401AD9569300997206 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2861441AD9569300997206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2861451AD9569300997206 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC2861471AD9569300997206 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC2861481AD9569300997206 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC2861501AD9569300997206 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC2861531AD9569300997206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BC2861591AD9569300997206 /* weiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC28615E1AD9569300997206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC28615F1AD9569300997206 /* weiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboTests.m; sourceTree = "<group>"; };
+		BC5E25EC1ADB519900658E1B /* ZYCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCTabBarView.h; path = weibo/ZYCTabBarView.h; sourceTree = "<group>"; };
+		BC5E25ED1ADB519900658E1B /* ZYCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCTabBarView.m; path = weibo/ZYCTabBarView.m; sourceTree = "<group>"; };
+		BC5E25EF1ADB5AEC00658E1B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		BC6C00B81AE3675D00CAAB55 /* ZYCSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCSearchBar.h; path = weibo/ZYCSearchBar.h; sourceTree = "<group>"; };
+		BC6C00B91AE3675D00CAAB55 /* ZYCSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCSearchBar.m; path = weibo/ZYCSearchBar.m; sourceTree = "<group>"; };
+		BC6C00BC1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCNewfeatureViewController.h; sourceTree = "<group>"; };
+		BC6C00BD1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCNewfeatureViewController.m; sourceTree = "<group>"; };
+		BC7B34F61ADA9F610016AD08 /* ZYCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCTabBarViewController.h; path = weibo/ZYCTabBarViewController.h; sourceTree = "<group>"; };
+		BC7B34F71ADA9F610016AD08 /* ZYCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCTabBarViewController.m; path = weibo/ZYCTabBarViewController.m; sourceTree = "<group>"; };
+		BC7B34F91ADA9FE30016AD08 /* ZYCHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCHomeTableViewController.h; path = weibo/ZYCHomeTableViewController.h; sourceTree = "<group>"; };
+		BC7B34FA1ADA9FE30016AD08 /* ZYCHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCHomeTableViewController.m; path = weibo/ZYCHomeTableViewController.m; sourceTree = "<group>"; };
+		BC7B34FC1ADA9FF60016AD08 /* ZYCMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCMessageTableViewController.h; path = weibo/ZYCMessageTableViewController.h; sourceTree = "<group>"; };
+		BC7B34FD1ADA9FF60016AD08 /* ZYCMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCMessageTableViewController.m; path = weibo/ZYCMessageTableViewController.m; sourceTree = "<group>"; };
+		BC7B34FF1ADAA0190016AD08 /* ZYCDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCDiscoverTableViewController.h; path = weibo/ZYCDiscoverTableViewController.h; sourceTree = "<group>"; };
+		BC7B35001ADAA0190016AD08 /* ZYCDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCDiscoverTableViewController.m; path = weibo/ZYCDiscoverTableViewController.m; sourceTree = "<group>"; };
+		BC7B35021ADAA02C0016AD08 /* ZYCMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCMeTableViewController.h; path = weibo/ZYCMeTableViewController.h; sourceTree = "<group>"; };
+		BC7B35031ADAA02C0016AD08 /* ZYCMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCMeTableViewController.m; path = weibo/ZYCMeTableViewController.m; sourceTree = "<group>"; };
+		BCA6064B1AE49A8300EB0AC6 /* ZYCOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCOAuthViewController.h; sourceTree = "<group>"; };
+		BCA6064C1AE49A8300EB0AC6 /* ZYCOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCOAuthViewController.m; sourceTree = "<group>"; };
+		BCC297621ADB6F9400130119 /* ZYCTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCTabBarButton.h; path = weibo/ZYCTabBarButton.h; sourceTree = "<group>"; };
+		BCC297631ADB6F9400130119 /* ZYCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCTabBarButton.m; path = weibo/ZYCTabBarButton.m; sourceTree = "<group>"; };
+		BCC297651ADBDE0E00130119 /* ZYCBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCBadgeButton.h; path = weibo/ZYCBadgeButton.h; sourceTree = "<group>"; };
+		BCC297661ADBDE0E00130119 /* ZYCBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCBadgeButton.m; path = weibo/ZYCBadgeButton.m; sourceTree = "<group>"; };
+		BCC297681ADBF5EF00130119 /* ZYCNavagationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCNavagationController.h; path = weibo/ZYCNavagationController.h; sourceTree = "<group>"; };
+		BCC297691ADBF5EF00130119 /* ZYCNavagationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCNavagationController.m; path = weibo/ZYCNavagationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC28613D1AD9569300997206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2861561AD9569300997206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC24B21B1ADAA99B002CAC79 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B34F91ADA9FE30016AD08 /* ZYCHomeTableViewController.h */,
+				BC7B34FA1ADA9FE30016AD08 /* ZYCHomeTableViewController.m */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		BC24B21C1ADAAA2C002CAC79 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B34FC1ADA9FF60016AD08 /* ZYCMessageTableViewController.h */,
+				BC7B34FD1ADA9FF60016AD08 /* ZYCMessageTableViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		BC24B21D1ADAAA3F002CAC79 /* 广场 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B34FF1ADAA0190016AD08 /* ZYCDiscoverTableViewController.h */,
+				BC7B35001ADAA0190016AD08 /* ZYCDiscoverTableViewController.m */,
+				BC6C00B81AE3675D00CAAB55 /* ZYCSearchBar.h */,
+				BC6C00B91AE3675D00CAAB55 /* ZYCSearchBar.m */,
+			);
+			name = "广场";
+			sourceTree = "<group>";
+		};
+		BC24B21E1ADAAA6A002CAC79 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B35021ADAA02C0016AD08 /* ZYCMeTableViewController.h */,
+				BC7B35031ADAA02C0016AD08 /* ZYCMeTableViewController.m */,
+			);
+			name = "我";
+			sourceTree = "<group>";
+		};
+		BC24B21F1ADAB01C002CAC79 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				BC24B2201ADAB09B002CAC79 /* UIImage+iOS7.h */,
+				BC24B2211ADAB09B002CAC79 /* UIImage+iOS7.m */,
+				BC1F35491ADE668D00F3D262 /* UIBarButtonItem+ZYC.h */,
+				BC1F354A1ADE668D00F3D262 /* UIBarButtonItem+ZYC.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		BC2861371AD9569300997206 = {
+			isa = PBXGroup;
+			children = (
+				BCC297651ADBDE0E00130119 /* ZYCBadgeButton.h */,
+				BCC297661ADBDE0E00130119 /* ZYCBadgeButton.m */,
+				BCA6064A1AE49A3200EB0AC6 /* 授权 */,
+				BC6C00BB1AE3A79D00CAAB55 /* 新特性 */,
+				BC5E25E71ADB513300658E1B /* 主要 */,
+				BC24B21F1ADAB01C002CAC79 /* category */,
+				BC24B21E1ADAAA6A002CAC79 /* 我 */,
+				BC24B21D1ADAAA3F002CAC79 /* 广场 */,
+				BC24B21C1ADAAA2C002CAC79 /* Message */,
+				BC24B21B1ADAA99B002CAC79 /* 首页 */,
+				BC2861421AD9569300997206 /* weibo */,
+				BC28615C1AD9569300997206 /* weiboTests */,
+				BC2861411AD9569300997206 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC2861411AD9569300997206 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC2861401AD9569300997206 /* weibo.app */,
+				BC2861591AD9569300997206 /* weiboTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC2861421AD9569300997206 /* weibo */ = {
+			isa = PBXGroup;
+			children = (
+				BC2861471AD9569300997206 /* AppDelegate.h */,
+				BC2861481AD9569300997206 /* AppDelegate.m */,
+				BC2861501AD9569300997206 /* Images.xcassets */,
+				BC2861521AD9569300997206 /* LaunchScreen.xib */,
+				BC2861431AD9569300997206 /* Supporting Files */,
+			);
+			path = weibo;
+			sourceTree = "<group>";
+		};
+		BC2861431AD9569300997206 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC2861441AD9569300997206 /* Info.plist */,
+				BC2861451AD9569300997206 /* main.m */,
+				BC5E25EF1ADB5AEC00658E1B /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC28615C1AD9569300997206 /* weiboTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC28615F1AD9569300997206 /* weiboTests.m */,
+				BC28615D1AD9569300997206 /* Supporting Files */,
+			);
+			path = weiboTests;
+			sourceTree = "<group>";
+		};
+		BC28615D1AD9569300997206 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC28615E1AD9569300997206 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC5E25E71ADB513300658E1B /* 主要 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B34F61ADA9F610016AD08 /* ZYCTabBarViewController.h */,
+				BC7B34F71ADA9F610016AD08 /* ZYCTabBarViewController.m */,
+				BC5E25EC1ADB519900658E1B /* ZYCTabBarView.h */,
+				BC5E25ED1ADB519900658E1B /* ZYCTabBarView.m */,
+				BCC297621ADB6F9400130119 /* ZYCTabBarButton.h */,
+				BCC297631ADB6F9400130119 /* ZYCTabBarButton.m */,
+				BCC297681ADBF5EF00130119 /* ZYCNavagationController.h */,
+				BCC297691ADBF5EF00130119 /* ZYCNavagationController.m */,
+			);
+			name = "主要";
+			sourceTree = "<group>";
+		};
+		BC6C00BB1AE3A79D00CAAB55 /* 新特性 */ = {
+			isa = PBXGroup;
+			children = (
+				BC6C00BC1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.h */,
+				BC6C00BD1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m */,
+			);
+			name = "新特性";
+			sourceTree = "<group>";
+		};
+		BCA6064A1AE49A3200EB0AC6 /* 授权 */ = {
+			isa = PBXGroup;
+			children = (
+				BCA6064B1AE49A8300EB0AC6 /* ZYCOAuthViewController.h */,
+				BCA6064C1AE49A8300EB0AC6 /* ZYCOAuthViewController.m */,
+			);
+			name = "授权";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC28613F1AD9569300997206 /* weibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC2861631AD9569300997206 /* Build configuration list for PBXNativeTarget "weibo" */;
+			buildPhases = (
+				BC28613C1AD9569300997206 /* Sources */,
+				BC28613D1AD9569300997206 /* Frameworks */,
+				BC28613E1AD9569300997206 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weibo;
+			productName = weibo;
+			productReference = BC2861401AD9569300997206 /* weibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC2861581AD9569300997206 /* weiboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC2861661AD9569300997206 /* Build configuration list for PBXNativeTarget "weiboTests" */;
+			buildPhases = (
+				BC2861551AD9569300997206 /* Sources */,
+				BC2861561AD9569300997206 /* Frameworks */,
+				BC2861571AD9569300997206 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC28615B1AD9569300997206 /* PBXTargetDependency */,
+			);
+			name = weiboTests;
+			productName = weiboTests;
+			productReference = BC2861591AD9569300997206 /* weiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC2861381AD9569300997206 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = zyc;
+				TargetAttributes = {
+					BC28613F1AD9569300997206 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					BC2861581AD9569300997206 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = BC28613F1AD9569300997206;
+					};
+				};
+			};
+			buildConfigurationList = BC28613B1AD9569300997206 /* Build configuration list for PBXProject "weibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC2861371AD9569300997206;
+			productRefGroup = BC2861411AD9569300997206 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC28613F1AD9569300997206 /* weibo */,
+				BC2861581AD9569300997206 /* weiboTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC28613E1AD9569300997206 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2861541AD9569300997206 /* LaunchScreen.xib in Resources */,
+				BC2861511AD9569300997206 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2861571AD9569300997206 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC28613C1AD9569300997206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7B34F81ADA9F610016AD08 /* ZYCTabBarViewController.m in Sources */,
+				BC7B34FE1ADA9FF60016AD08 /* ZYCMessageTableViewController.m in Sources */,
+				BC7B34FB1ADA9FE30016AD08 /* ZYCHomeTableViewController.m in Sources */,
+				BC1F354B1ADE668D00F3D262 /* UIBarButtonItem+ZYC.m in Sources */,
+				BC6C00BA1AE3675D00CAAB55 /* ZYCSearchBar.m in Sources */,
+				BC2861491AD9569300997206 /* AppDelegate.m in Sources */,
+				BC7B35011ADAA0190016AD08 /* ZYCDiscoverTableViewController.m in Sources */,
+				BC5E25EE1ADB519900658E1B /* ZYCTabBarView.m in Sources */,
+				BC6C00BE1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m in Sources */,
+				BCA6064D1AE49A8300EB0AC6 /* ZYCOAuthViewController.m in Sources */,
+				BCC2976A1ADBF5EF00130119 /* ZYCNavagationController.m in Sources */,
+				BCC297671ADBDE0E00130119 /* ZYCBadgeButton.m in Sources */,
+				BCC297641ADB6F9400130119 /* ZYCTabBarButton.m in Sources */,
+				BC2861461AD9569300997206 /* main.m in Sources */,
+				BC7B35041ADAA02C0016AD08 /* ZYCMeTableViewController.m in Sources */,
+				BC24B2221ADAB09B002CAC79 /* UIImage+iOS7.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2861551AD9569300997206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2861601AD9569300997206 /* weiboTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC28615B1AD9569300997206 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC28613F1AD9569300997206 /* weibo */;
+			targetProxy = BC28615A1AD9569300997206 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC2861521AD9569300997206 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC2861531AD9569300997206 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC2861611AD9569300997206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC2861621AD9569300997206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC2861641AD9569300997206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/weibo/Prefix.pch";
+				INFOPLIST_FILE = weibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC2861651AD9569300997206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/weibo/Prefix.pch";
+				INFOPLIST_FILE = weibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC2861671AD9569300997206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = weiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weibo.app/weibo";
+			};
+			name = Debug;
+		};
+		BC2861681AD9569300997206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = weiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weibo.app/weibo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC28613B1AD9569300997206 /* Build configuration list for PBXProject "weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2861611AD9569300997206 /* Debug */,
+				BC2861621AD9569300997206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC2861631AD9569300997206 /* Build configuration list for PBXNativeTarget "weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2861641AD9569300997206 /* Debug */,
+				BC2861651AD9569300997206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC2861661AD9569300997206 /* Build configuration list for PBXNativeTarget "weiboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2861671AD9569300997206 /* Debug */,
+				BC2861681AD9569300997206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC2861381AD9569300997206 /* Project object */;
+}
