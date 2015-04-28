@@ -8,6 +8,7 @@
 
 #import "ZYCNewfeatureViewController.h"
 #import "ZYCTabBarViewController.h"
+#import "ZYCOAuthViewController.h"
 
 @interface ZYCNewfeatureViewController ()
 
@@ -69,7 +70,6 @@
     [self.view addSubview:scrollView];
     
     
-    
 }
 
 
@@ -77,8 +77,8 @@
 -(void)start
 {
     [UIApplication sharedApplication].statusBarHidden=NO;
-    self.view.window.rootViewController = [[ZYCTabBarViewController alloc] init];
-    
+//    self.view.window.rootViewController = [[ZYCTabBarViewController alloc] init];
+    self.view.window.rootViewController=[[ZYCOAuthViewController alloc] init];
 }
 
 -(void)checkBoxClick:(UIButton *)checkBox

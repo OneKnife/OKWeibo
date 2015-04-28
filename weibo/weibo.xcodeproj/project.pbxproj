@@ -23,6 +23,17 @@
 		BC7B35011ADAA0190016AD08 /* ZYCDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7B35001ADAA0190016AD08 /* ZYCDiscoverTableViewController.m */; };
 		BC7B35041ADAA02C0016AD08 /* ZYCMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7B35031ADAA02C0016AD08 /* ZYCMeTableViewController.m */; };
 		BCA6064D1AE49A8300EB0AC6 /* ZYCOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6064C1AE49A8300EB0AC6 /* ZYCOAuthViewController.m */; };
+		BCA606621AE4F0E000EB0AC6 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA606501AE4F0E000EB0AC6 /* AFHTTPRequestOperation.m */; };
+		BCA606631AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA606521AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.m */; };
+		BCA606641AE4F0E000EB0AC6 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA606541AE4F0E000EB0AC6 /* AFHTTPSessionManager.m */; };
+		BCA606651AE4F0E000EB0AC6 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA606571AE4F0E000EB0AC6 /* AFNetworkReachabilityManager.m */; };
+		BCA606661AE4F0E000EB0AC6 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA606591AE4F0E000EB0AC6 /* AFSecurityPolicy.m */; };
+		BCA606671AE4F0E000EB0AC6 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6065B1AE4F0E000EB0AC6 /* AFURLConnectionOperation.m */; };
+		BCA606681AE4F0E000EB0AC6 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6065D1AE4F0E000EB0AC6 /* AFURLRequestSerialization.m */; };
+		BCA606691AE4F0E000EB0AC6 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6065F1AE4F0E000EB0AC6 /* AFURLResponseSerialization.m */; };
+		BCA6066A1AE4F0E000EB0AC6 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA606611AE4F0E000EB0AC6 /* AFURLSessionManager.m */; };
+		BCA6066D1AE4F90F00EB0AC6 /* ZYCOAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA6066C1AE4F90F00EB0AC6 /* ZYCOAuthModel.m */; };
+		BCA606711AE5381800EB0AC6 /* ZYCAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA606701AE5381800EB0AC6 /* ZYCAccountTool.m */; };
 		BCC297641ADB6F9400130119 /* ZYCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC297631ADB6F9400130119 /* ZYCTabBarButton.m */; };
 		BCC297671ADBDE0E00130119 /* ZYCBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC297661ADBDE0E00130119 /* ZYCBadgeButton.m */; };
 		BCC2976A1ADBF5EF00130119 /* ZYCNavagationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC297691ADBF5EF00130119 /* ZYCNavagationController.m */; };
@@ -72,6 +83,29 @@
 		BC7B35031ADAA02C0016AD08 /* ZYCMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCMeTableViewController.m; path = weibo/ZYCMeTableViewController.m; sourceTree = "<group>"; };
 		BCA6064B1AE49A8300EB0AC6 /* ZYCOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCOAuthViewController.h; sourceTree = "<group>"; };
 		BCA6064C1AE49A8300EB0AC6 /* ZYCOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCOAuthViewController.m; sourceTree = "<group>"; };
+		BCA6064F1AE4F0E000EB0AC6 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		BCA606501AE4F0E000EB0AC6 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		BCA606511AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		BCA606521AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		BCA606531AE4F0E000EB0AC6 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BCA606541AE4F0E000EB0AC6 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		BCA606551AE4F0E000EB0AC6 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		BCA606561AE4F0E000EB0AC6 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		BCA606571AE4F0E000EB0AC6 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		BCA606581AE4F0E000EB0AC6 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		BCA606591AE4F0E000EB0AC6 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		BCA6065A1AE4F0E000EB0AC6 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		BCA6065B1AE4F0E000EB0AC6 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		BCA6065C1AE4F0E000EB0AC6 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BCA6065D1AE4F0E000EB0AC6 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		BCA6065E1AE4F0E000EB0AC6 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BCA6065F1AE4F0E000EB0AC6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BCA606601AE4F0E000EB0AC6 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		BCA606611AE4F0E000EB0AC6 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		BCA6066B1AE4F90F00EB0AC6 /* ZYCOAuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCOAuthModel.h; path = weibo/ZYCOAuthModel.h; sourceTree = "<group>"; };
+		BCA6066C1AE4F90F00EB0AC6 /* ZYCOAuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCOAuthModel.m; path = weibo/ZYCOAuthModel.m; sourceTree = "<group>"; };
+		BCA6066F1AE5381800EB0AC6 /* ZYCAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCAccountTool.h; path = weibo/ZYCAccountTool.h; sourceTree = "<group>"; };
+		BCA606701AE5381800EB0AC6 /* ZYCAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCAccountTool.m; path = weibo/ZYCAccountTool.m; sourceTree = "<group>"; };
 		BCC297621ADB6F9400130119 /* ZYCTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCTabBarButton.h; path = weibo/ZYCTabBarButton.h; sourceTree = "<group>"; };
 		BCC297631ADB6F9400130119 /* ZYCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCTabBarButton.m; path = weibo/ZYCTabBarButton.m; sourceTree = "<group>"; };
 		BCC297651ADBDE0E00130119 /* ZYCBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCBadgeButton.h; path = weibo/ZYCBadgeButton.h; sourceTree = "<group>"; };
@@ -162,6 +196,7 @@
 				BC24B21B1ADAA99B002CAC79 /* 首页 */,
 				BC2861421AD9569300997206 /* weibo */,
 				BC28615C1AD9569300997206 /* weiboTests */,
+				BCA6066E1AE5372C00EB0AC6 /* 其他 */,
 				BC2861411AD9569300997206 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,6 +217,7 @@
 				BC2861481AD9569300997206 /* AppDelegate.m */,
 				BC2861501AD9569300997206 /* Images.xcassets */,
 				BC2861521AD9569300997206 /* LaunchScreen.xib */,
+				BCA6064E1AE4F0E000EB0AC6 /* AFNetworking */,
 				BC2861431AD9569300997206 /* Supporting Files */,
 			);
 			path = weibo;
@@ -243,8 +279,45 @@
 			children = (
 				BCA6064B1AE49A8300EB0AC6 /* ZYCOAuthViewController.h */,
 				BCA6064C1AE49A8300EB0AC6 /* ZYCOAuthViewController.m */,
+				BCA6066B1AE4F90F00EB0AC6 /* ZYCOAuthModel.h */,
+				BCA6066C1AE4F90F00EB0AC6 /* ZYCOAuthModel.m */,
 			);
 			name = "授权";
+			sourceTree = "<group>";
+		};
+		BCA6064E1AE4F0E000EB0AC6 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BCA6064F1AE4F0E000EB0AC6 /* AFHTTPRequestOperation.h */,
+				BCA606501AE4F0E000EB0AC6 /* AFHTTPRequestOperation.m */,
+				BCA606511AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.h */,
+				BCA606521AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.m */,
+				BCA606531AE4F0E000EB0AC6 /* AFHTTPSessionManager.h */,
+				BCA606541AE4F0E000EB0AC6 /* AFHTTPSessionManager.m */,
+				BCA606551AE4F0E000EB0AC6 /* AFNetworking.h */,
+				BCA606561AE4F0E000EB0AC6 /* AFNetworkReachabilityManager.h */,
+				BCA606571AE4F0E000EB0AC6 /* AFNetworkReachabilityManager.m */,
+				BCA606581AE4F0E000EB0AC6 /* AFSecurityPolicy.h */,
+				BCA606591AE4F0E000EB0AC6 /* AFSecurityPolicy.m */,
+				BCA6065A1AE4F0E000EB0AC6 /* AFURLConnectionOperation.h */,
+				BCA6065B1AE4F0E000EB0AC6 /* AFURLConnectionOperation.m */,
+				BCA6065C1AE4F0E000EB0AC6 /* AFURLRequestSerialization.h */,
+				BCA6065D1AE4F0E000EB0AC6 /* AFURLRequestSerialization.m */,
+				BCA6065E1AE4F0E000EB0AC6 /* AFURLResponseSerialization.h */,
+				BCA6065F1AE4F0E000EB0AC6 /* AFURLResponseSerialization.m */,
+				BCA606601AE4F0E000EB0AC6 /* AFURLSessionManager.h */,
+				BCA606611AE4F0E000EB0AC6 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		BCA6066E1AE5372C00EB0AC6 /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				BCA6066F1AE5381800EB0AC6 /* ZYCAccountTool.h */,
+				BCA606701AE5381800EB0AC6 /* ZYCAccountTool.m */,
+			);
+			name = "其他";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,14 +419,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA6066A1AE4F0E000EB0AC6 /* AFURLSessionManager.m in Sources */,
+				BCA606671AE4F0E000EB0AC6 /* AFURLConnectionOperation.m in Sources */,
 				BC7B34F81ADA9F610016AD08 /* ZYCTabBarViewController.m in Sources */,
+				BCA606641AE4F0E000EB0AC6 /* AFHTTPSessionManager.m in Sources */,
+				BCA606651AE4F0E000EB0AC6 /* AFNetworkReachabilityManager.m in Sources */,
 				BC7B34FE1ADA9FF60016AD08 /* ZYCMessageTableViewController.m in Sources */,
+				BCA6066D1AE4F90F00EB0AC6 /* ZYCOAuthModel.m in Sources */,
 				BC7B34FB1ADA9FE30016AD08 /* ZYCHomeTableViewController.m in Sources */,
 				BC1F354B1ADE668D00F3D262 /* UIBarButtonItem+ZYC.m in Sources */,
 				BC6C00BA1AE3675D00CAAB55 /* ZYCSearchBar.m in Sources */,
+				BCA606661AE4F0E000EB0AC6 /* AFSecurityPolicy.m in Sources */,
+				BCA606711AE5381800EB0AC6 /* ZYCAccountTool.m in Sources */,
 				BC2861491AD9569300997206 /* AppDelegate.m in Sources */,
 				BC7B35011ADAA0190016AD08 /* ZYCDiscoverTableViewController.m in Sources */,
 				BC5E25EE1ADB519900658E1B /* ZYCTabBarView.m in Sources */,
+				BCA606631AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.m in Sources */,
 				BC6C00BE1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m in Sources */,
 				BCA6064D1AE49A8300EB0AC6 /* ZYCOAuthViewController.m in Sources */,
 				BCC2976A1ADBF5EF00130119 /* ZYCNavagationController.m in Sources */,
@@ -361,6 +442,9 @@
 				BCC297641ADB6F9400130119 /* ZYCTabBarButton.m in Sources */,
 				BC2861461AD9569300997206 /* main.m in Sources */,
 				BC7B35041ADAA02C0016AD08 /* ZYCMeTableViewController.m in Sources */,
+				BCA606681AE4F0E000EB0AC6 /* AFURLRequestSerialization.m in Sources */,
+				BCA606621AE4F0E000EB0AC6 /* AFHTTPRequestOperation.m in Sources */,
+				BCA606691AE4F0E000EB0AC6 /* AFURLResponseSerialization.m in Sources */,
 				BC24B2221ADAB09B002CAC79 /* UIImage+iOS7.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

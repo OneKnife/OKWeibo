@@ -7,6 +7,10 @@
 //
 
 #import "ZYCOAuthViewController.h"
+#import "AFNetworking.h"
+#import "ZYCOAuthModel.h"
+#import "ZYCAccountTool.h"
+
 
 @interface ZYCOAuthViewController ()<UIWebViewDelegate>
 
@@ -54,6 +58,31 @@
 //
 -(void)accessTokenWithCode:(NSString *)code
 {
+//@"https://api.weibo.com/oauth2/access_token?client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET&grant_type=authorization_code&redirect_uri=YOUR_REGISTERED_REDIRECT_URI&code=CODE"
+    
+    
+    AFHTTPSessionManager * manager =[AFHTTPSessionManager manager];
+    
+    
+    NSMutableDictionary * param =[NSMutableDictionary dictionary];
+    [param setObject:@"1497966800" forKey:@"client_id"];
+    [param setObject:@"dccf639b311338a7e427f699a178b1ef" forKey:@"client_secret"];
+    [param setObject:@"authorization_code" forKey:@"grant_type"];
+    [param setObject:@"http://www.baidu.com" forKey:@"redirect_uri"];
+    [param setObject:code forKey:@"code"];
+    manager.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/plain"];
+    
+    [manager POST:@"https://api.weibo.com/oauth2/access_token" parameters:param success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        ZYCOAuthModel * model =[[ZYCOAuthModel alloc] init];
+        [model setValuesForKeysWithDictionary:responseObject];
+        
+        [ZYCAccountTool saveAccount:model];
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+    
     
 }
 

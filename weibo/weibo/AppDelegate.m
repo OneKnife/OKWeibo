@@ -10,6 +10,8 @@
 #import "ZYCTabBarViewController.h"
 #import "ZYCNewfeatureViewController.h"
 #import "ZYCOAuthViewController.h"
+#import "ZYCOAuthModel.h"
+#import "ZYCAccountTool.h"
 @interface AppDelegate ()
 
 @end
@@ -33,12 +35,29 @@
 //    }
 //    else
 //    {
-//        self.window.rootViewController=[[ZYCTabBarViewController alloc]init];
+//     
+//        ZYCOAuthModel * model = [ZYCAccountTool account];
+//       
+//        if (!model) {
+//            
+//            ZYCOAuthViewController * vc =[[ZYCOAuthViewController alloc] init];
+//            self.window.rootViewController=vc;
+//        }
+//        else
+//        {
+//            self.window.rootViewController=[[ZYCTabBarViewController alloc]init];
+//            
+//        }
 //    }
     
-    ZYCOAuthViewController * vc =[[ZYCOAuthViewController alloc] init];
     
-    self.window.rootViewController=vc;
+    self.window.rootViewController=[[ZYCTabBarViewController alloc]init];
+    
+    
+    
+    
+    
+//
     
     
     [self.window makeKeyAndVisible];
