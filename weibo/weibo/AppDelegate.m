@@ -24,9 +24,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
     
-    [self.window makeKeyAndVisible];
+   
     self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+     [self.window makeKeyAndVisible];
     
     [ZYCWeiboTools chooseViewController];
     

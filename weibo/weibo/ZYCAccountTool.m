@@ -25,10 +25,20 @@
 +(ZYCOAuthModel *)account
 {
     NSString * path =NSHomeDirectory();
-    //             NSLog(@"%@",path);
-    path=[path stringByAppendingString:@"Documents/account.data"];
+                 NSLog(@"%@",path);
+    path=[path stringByAppendingPathComponent:@"Documents/account.data"];
     ZYCOAuthModel * model =[NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    return model;
+    
+    
+    if ([[NSDate date] compare:model.expiresTime] == NSOrderedAscending) {
+        return model;
+    }
+    else
+    {
+        return nil;
+    }
+    
+    
 }
 
 @end

@@ -11,13 +11,16 @@
 #import "ZYCOAuthModel.h"
 #import "ZYCAccountTool.h"
 #import "ZYCWeiboTools.h"
+#import "MBProgressHUD.h"
 
-@interface ZYCOAuthViewController ()<UIWebViewDelegate>
+@interface ZYCOAuthViewController ()<UIWebViewDelegate,MBProgressHUDDelegate>
 
 @end
 
 @implementation ZYCOAuthViewController
-
+{
+    MBProgressHUD * _HUD;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -74,8 +77,8 @@
     
     [manager POST:@"https://api.weibo.com/oauth2/access_token" parameters:param success:^(NSURLSessionDataTask *task, id responseObject) {
         
-        ZYCOAuthModel * model =[[ZYCOAuthModel alloc] init];
-        [model setValuesForKeysWithDictionary:responseObject];
+        ZYCOAuthModel * model =[ZYCOAuthModel accountWithDict:responseObject];
+//        [model setValuesForKeysWithDictionary:responseObject];
         
         [ZYCAccountTool saveAccount:model];
         
@@ -92,10 +95,40 @@
 
 
 
+#pragma mark - webView代理
+
+
+-(void)webViewDidStartLoad:(UIWebView *)webView
+{
+    _HUD =[[MBProgressHUD alloc] initWithView:self.view];
+    
+    [self.view addSubview:_HUD];
+    _HUD.labelText=@"loading...";
+    _HUD.removeFromSuperViewOnHide=YES;
+    [_HUD show:YES];
+    
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [_HUD hide:YES];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [_HUD hide:YES];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)dealloc
+{
+    
+}
 
 @end

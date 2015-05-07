@@ -8,6 +8,10 @@
 
 #import "ZYCHomeTableViewController.h"
 #import "UIBarButtonItem+ZYC.h"
+#import "AFNetworking.h"
+#import "ZYCAccountTool.h"
+#import "ZYCOAuthModel.h"
+
 @interface ZYCHomeTableViewController ()
 
 @end
@@ -19,7 +23,7 @@
     
     [self customNavigationBar];
     
-    
+    [self setupStatusData];
 
 }
 
@@ -63,6 +67,21 @@
     {
             [button setImage:[UIImage imageWithIOS7Name:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
     }
+}
+
+
+-(void)setupStatusData
+{
+    AFHTTPSessionManager * manager =[AFHTTPSessionManager manager];
+    
+    
+    NSDictionary * parm =@{@"access_token":[ZYCAccountTool account].access_token};
+    
+    [manager GET:@"https://api.weibo.com/2/statuses/home_timeline.json" parameters:parm success:^(NSURLSessionDataTask *task, id responseObject) {
+        ZYCLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        ZYCLog(@"home err!");
+    }];
 }
 
 
