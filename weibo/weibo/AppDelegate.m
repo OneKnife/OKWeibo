@@ -12,6 +12,8 @@
 #import "ZYCOAuthViewController.h"
 #import "ZYCOAuthModel.h"
 #import "ZYCAccountTool.h"
+#import "ZYCWeiboTools.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,37 +23,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
+    
+    [self.window makeKeyAndVisible];
     self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     
-//    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
-//    NSString * lastVersion = [defaults valueForKey:@"lastVersion"];
-//    
-//    NSString * currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
-//
-//    if (![lastVersion isEqualToString:currentVersion]) {
-//        self.window.rootViewController=[[ZYCNewfeatureViewController alloc] init];
-//        [defaults setObject:currentVersion forKey:@"lastVersion"];
-//    }
-//    else
-//    {
-//     
-//        ZYCOAuthModel * model = [ZYCAccountTool account];
-//       
-//        if (!model) {
-//            
-//            ZYCOAuthViewController * vc =[[ZYCOAuthViewController alloc] init];
-//            self.window.rootViewController=vc;
-//        }
-//        else
-//        {
-//            self.window.rootViewController=[[ZYCTabBarViewController alloc]init];
-//            
-//        }
-//    }
+    [ZYCWeiboTools chooseViewController];
     
+//    self.window.rootViewController=[[ZYCTabBarViewController alloc]init];
     
-    self.window.rootViewController=[[ZYCTabBarViewController alloc]init];
     
     
     
@@ -60,7 +40,6 @@
 //
     
     
-    [self.window makeKeyAndVisible];
     
     
     

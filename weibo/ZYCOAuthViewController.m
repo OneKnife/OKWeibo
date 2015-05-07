@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 #import "ZYCOAuthModel.h"
 #import "ZYCAccountTool.h"
-
+#import "ZYCWeiboTools.h"
 
 @interface ZYCOAuthViewController ()<UIWebViewDelegate>
 
@@ -78,6 +78,10 @@
         [model setValuesForKeysWithDictionary:responseObject];
         
         [ZYCAccountTool saveAccount:model];
+        
+        [ZYCWeiboTools chooseViewController];
+        
+        
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error);

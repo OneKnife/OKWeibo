@@ -14,6 +14,7 @@
 		BC2861511AD9569300997206 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2861501AD9569300997206 /* Images.xcassets */; };
 		BC2861541AD9569300997206 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2861521AD9569300997206 /* LaunchScreen.xib */; };
 		BC2861601AD9569300997206 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC28615F1AD9569300997206 /* weiboTests.m */; };
+		BC415E081AFB5A4C009E0A77 /* ZYCWeiboTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BC415E071AFB5A4C009E0A77 /* ZYCWeiboTools.m */; };
 		BC5E25EE1ADB519900658E1B /* ZYCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5E25ED1ADB519900658E1B /* ZYCTabBarView.m */; };
 		BC6C00BA1AE3675D00CAAB55 /* ZYCSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6C00B91AE3675D00CAAB55 /* ZYCSearchBar.m */; };
 		BC6C00BE1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6C00BD1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m */; };
@@ -64,6 +65,8 @@
 		BC2861591AD9569300997206 /* weiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC28615E1AD9569300997206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC28615F1AD9569300997206 /* weiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboTests.m; sourceTree = "<group>"; };
+		BC415E061AFB5A4C009E0A77 /* ZYCWeiboTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCWeiboTools.h; path = weibo/ZYCWeiboTools.h; sourceTree = "<group>"; };
+		BC415E071AFB5A4C009E0A77 /* ZYCWeiboTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCWeiboTools.m; path = weibo/ZYCWeiboTools.m; sourceTree = "<group>"; };
 		BC5E25EC1ADB519900658E1B /* ZYCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCTabBarView.h; path = weibo/ZYCTabBarView.h; sourceTree = "<group>"; };
 		BC5E25ED1ADB519900658E1B /* ZYCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCTabBarView.m; path = weibo/ZYCTabBarView.m; sourceTree = "<group>"; };
 		BC5E25EF1ADB5AEC00658E1B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 		BC2861371AD9569300997206 = {
 			isa = PBXGroup;
 			children = (
+				BC415E021AFB18DE009E0A77 /* 工具 */,
 				BCC297651ADBDE0E00130119 /* ZYCBadgeButton.h */,
 				BCC297661ADBDE0E00130119 /* ZYCBadgeButton.m */,
 				BCA6064A1AE49A3200EB0AC6 /* 授权 */,
@@ -248,6 +252,13 @@
 				BC28615E1AD9569300997206 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC415E021AFB18DE009E0A77 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "工具";
 			sourceTree = "<group>";
 		};
 		BC5E25E71ADB513300658E1B /* 主要 */ = {
@@ -316,6 +327,8 @@
 			children = (
 				BCA6066F1AE5381800EB0AC6 /* ZYCAccountTool.h */,
 				BCA606701AE5381800EB0AC6 /* ZYCAccountTool.m */,
+				BC415E061AFB5A4C009E0A77 /* ZYCWeiboTools.h */,
+				BC415E071AFB5A4C009E0A77 /* ZYCWeiboTools.m */,
 			);
 			name = "其他";
 			sourceTree = "<group>";
@@ -434,6 +447,7 @@
 				BC2861491AD9569300997206 /* AppDelegate.m in Sources */,
 				BC7B35011ADAA0190016AD08 /* ZYCDiscoverTableViewController.m in Sources */,
 				BC5E25EE1ADB519900658E1B /* ZYCTabBarView.m in Sources */,
+				BC415E081AFB5A4C009E0A77 /* ZYCWeiboTools.m in Sources */,
 				BCA606631AE4F0E000EB0AC6 /* AFHTTPRequestOperationManager.m in Sources */,
 				BC6C00BE1AE3A7F000CAAB55 /* ZYCNewfeatureViewController.m in Sources */,
 				BCA6064D1AE49A8300EB0AC6 /* ZYCOAuthViewController.m in Sources */,
@@ -496,6 +510,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -538,6 +553,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -566,6 +582,7 @@
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -578,6 +595,7 @@
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

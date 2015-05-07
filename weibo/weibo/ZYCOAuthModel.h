@@ -14,6 +14,10 @@
 @property (nonatomic,assign) long long expires_in;
 @property (nonatomic,assign) long long remind_in;
 @property (nonatomic,assign) long long uid;
+@property (nonatomic,strong) NSDate * expiresTime;
 
+@property (nonatomic,strong) NSDictionary * dict;
 
+-(instancetype)initWithDict:(NSDictionary *)dict;
++(instancetype)accountWithDict:(NSDictionary *)dict;
 @end
